@@ -1,0 +1,10 @@
+autocom.rpa.ocr package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.ocr
+   :members:
+   :undoc-members:
+   :show-inheritance:

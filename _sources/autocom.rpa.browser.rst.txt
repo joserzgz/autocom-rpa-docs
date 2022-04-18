@@ -1,0 +1,10 @@
+autocom.rpa.browser package
+===========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.browser
+   :members:
+   :undoc-members:
+   :show-inheritance:

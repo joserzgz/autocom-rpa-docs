@@ -1,0 +1,10 @@
+autocom.rpa.window package
+==========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.window
+   :members:
+   :undoc-members:
+   :show-inheritance:

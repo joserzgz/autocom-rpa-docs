@@ -1,0 +1,10 @@
+autocom.rpa.notify package
+==========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.notify
+   :members:
+   :undoc-members:
+   :show-inheritance:

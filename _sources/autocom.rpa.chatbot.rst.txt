@@ -1,0 +1,10 @@
+autocom.rpa.chatbot package
+===========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.chatbot
+   :members:
+   :undoc-members:
+   :show-inheritance:

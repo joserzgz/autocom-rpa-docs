@@ -1,0 +1,10 @@
+autocom.rpa.storage package
+===========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.storage
+   :members:
+   :undoc-members:
+   :show-inheritance:

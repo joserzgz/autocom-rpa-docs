@@ -1,0 +1,10 @@
+autocom.rpa.errors package
+==========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.errors
+   :members:
+   :undoc-members:
+   :show-inheritance:

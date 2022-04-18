@@ -1,0 +1,10 @@
+autocom.rpa.excel package
+=========================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.excel
+   :members:
+   :undoc-members:
+   :show-inheritance:

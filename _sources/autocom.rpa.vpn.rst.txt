@@ -1,0 +1,21 @@
+autocom.rpa.vpn package
+=======================
+
+Submodules
+----------
+
+autocom.rpa.vpn.forticlient module
+----------------------------------
+
+.. automodule:: autocom.rpa.vpn.forticlient
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.vpn
+   :members:
+   :undoc-members:
+   :show-inheritance:

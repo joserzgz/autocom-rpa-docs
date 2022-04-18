@@ -1,0 +1,10 @@
+autocom.rpa.application package
+===============================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.application
+   :members:
+   :undoc-members:
+   :show-inheritance:
