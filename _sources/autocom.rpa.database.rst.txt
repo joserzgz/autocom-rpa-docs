@@ -1,0 +1,10 @@
+autocom.rpa.database package
+============================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.database
+   :members:
+   :undoc-members:
+   :show-inheritance:

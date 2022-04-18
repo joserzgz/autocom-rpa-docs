@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>autocom.rpa.excel package &mdash; documentación de autocom.rpa - 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> autocom.rpa
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">autocom.rpa.excel package</a><ul>
+<li><a class="reference internal" href="#module-autocom.rpa.excel">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">autocom.rpa</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>autocom.rpa.excel package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="autocom-rpa-excel-package">
+<h1>autocom.rpa.excel package<a class="headerlink" href="#autocom-rpa-excel-package" title="Enlazar permanentemente con este título"></a></h1>
+<section id="module-autocom.rpa.excel">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-autocom.rpa.excel" title="Enlazar permanentemente con este título"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autocom.rpa.excel.</span></span><span class="sig-name descname"><span class="pre">ExcelBook</span></span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que maneja la conexión habia un libro de excel, ya sea nuevo (creado con el mismo objecto) o abriendo un libre existente.
+Mediante el objeto instanciado de esta clase se controla el libro mediante los métodos incluidos en la clase.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p>ExcelBook: Clase para el manejo y control de un libre de excel.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.autoFitColumns">
+<span class="sig-name descname"><span class="pre">autoFitColumns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">max_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.autoFitColumns" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Ajusta el ancho de todas las columna con datos en la hoja vigente.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>max_width (int | None, optional): En caso de recibir un valor tipo int ese valor se considera como el valor máximo del ancho de columna, en caso de recibir un valor None no se establece un ancho máximo. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.close" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Cierra el libro de excel que se está manejando.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.filename">
+<span class="sig-name descname"><span class="pre">filename</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.filename" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.fill_from_dataset">
+<span class="sig-name descname"><span class="pre">fill_from_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rows</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">columns</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sheet_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.fill_from_dataset" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Llena una hoja de excel comenzando desde A1 con los renglones recibidos en el argumento rows.</p>
+<dl>
+<dt>Args:</dt><dd><ul>
+<li><p>rows (arreglo de JSON): Se recibe un arreglo de objetos JSON, cada objeto corresponde a un renglón de la hoja de excel.</p></li>
+<li><p>columns (arreglo de JSON, optional): Se recibe un arreglo de objetos JSON con la definición de cada columna que integrará el llenado de la hoja. Defaults to None.</p>
+<blockquote>
+<div><p>Los campos que podrá contener cada objeto columna son:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+    &quot;name&quot;: &quot;&lt;str&gt;&quot;,
+    &quot;title&quot;: &quot;&lt;str&gt;&quot;,
+    &quot;width&quot;: &quot;auto&quot; | &lt;int&gt;
+}
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>name: Nombre del campo del registro JSON correspondiente al renglón.</p></li>
+<li><p>title: Título a utilizar en el encabezado de la columna.</p></li>
+<li><p>width: Ancho de la columna, si se envía una cadena «auto» se calculará el ancho automáticamente, o puede enviarse un valor tipo int que indica el ancho de la columna.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>sheet_name (str | None, optional): Nombre de la hoja donde se llenará la rejilla, si se envía None se utilizará la hoja vigente. Defaults to None.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.get_activeSheet">
+<span class="sig-name descname"><span class="pre">get_activeSheet</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.get_activeSheet" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Regresa el nombre de la hoja vigente.</p>
+<dl class="simple">
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p>str: Nombre de la hoja vigente.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.open">
+<span class="sig-name descname"><span class="pre">open</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.open" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Abre un libro de excel y lo deja disponible para su manejo.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>filename (str): Nombre del archivo excel incluyendo la ruta.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.save" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Guarda el libro de excel con los ajustes hechos.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.save_as">
+<span class="sig-name descname"><span class="pre">save_as</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.save_as" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Guarda el libro de excel pero con otro nombre diferente al original, dejando sin alterar el libro de excel original en caso que «filename» sea diferente al original.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>filename (str): Nombre del archivo excel incluyendo la ruta.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.set_activeSheet">
+<span class="sig-name descname"><span class="pre">set_activeSheet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sheet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.set_activeSheet" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Cambia la hoja activa con base al nombre de la hoja del argumento «sheet».</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>sheet (str): Nombre de la hoja a establecer como activa, en caso de no existir la crea.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="autocom.rpa.excel.ExcelBook.wb">
+<span class="sig-name descname"><span class="pre">wb</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">None</span></em><a class="headerlink" href="#autocom.rpa.excel.ExcelBook.wb" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, autocom.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

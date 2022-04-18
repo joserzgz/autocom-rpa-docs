@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>autocom.rpa.database package &mdash; documentación de autocom.rpa - 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> autocom.rpa
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">autocom.rpa.database package</a><ul>
+<li><a class="reference internal" href="#module-autocom.rpa.database">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">autocom.rpa</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>autocom.rpa.database package</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="autocom-rpa-database-package">
+<h1>autocom.rpa.database package<a class="headerlink" href="#autocom-rpa-database-package" title="Enlazar permanentemente con este título"></a></h1>
+<section id="module-autocom.rpa.database">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-autocom.rpa.database" title="Enlazar permanentemente con este título"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="autocom.rpa.database.DatabaseConnection">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">autocom.rpa.database.</span></span><span class="sig-name descname"><span class="pre">DatabaseConnection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection_string</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.DatabaseConnection" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Clase que maneja la conexión a una base de datos y proporciona los métodos necesarios para ejecutar comandos SQL en dicha base de datos.
+Se utiliza ODBC para estandarizar la conexión a las bases de datos, por lo que es necesario que se instale el controlador ODBC necesario para conectarse a la base de datos destino.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.database.DatabaseConnection.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.DatabaseConnection.close" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Método para cerrar la conexión hacia la base de datos.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="autocom.rpa.database.DatabaseConnection.read_to_dataset">
+<span class="sig-name descname"><span class="pre">read_to_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sqlquery</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.DatabaseConnection.read_to_dataset" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Realiza una consulta a la base de datos mediante el comando en «sqlquery», regresa el conjunto de registros resultante en formato JSON.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>sqlquery (str): Comando de consulta SQL a realizar.</p></li>
+<li><p>encoding (str, optional): Tipo de codificación de caracteres con el que se regresan los registros. Defaults to «utf8».</p></li>
+</ul>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p>array de json: Arreglo de registros en formato JSON del resultado de la consulta.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autocom.rpa.database.close_db_connection">
+<span class="sig-prename descclassname"><span class="pre">autocom.rpa.database.</span></span><span class="sig-name descname"><span class="pre">close_db_connection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="#autocom.rpa.database.DatabaseConnection" title="autocom.rpa.database.DatabaseConnection"><span class="pre">autocom.rpa.database.DatabaseConnection</span></a></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.close_db_connection" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Método que cierra la conexión en caso de estar abierta hacia la base de datos del object recibido como argumento.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>connection (DatabaseConnection): Objecto de la base de datos que se cerrará.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autocom.rpa.database.close_ssh_tunnel">
+<span class="sig-prename descclassname"><span class="pre">autocom.rpa.database.</span></span><span class="sig-name descname"><span class="pre">close_ssh_tunnel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tunnel</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.close_ssh_tunnel" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Cierra la conexión hacie el tunel SSH.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>tunnel (SSHTunnelForwarder): Object de la conexión al tunel SSH.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autocom.rpa.database.connect_db">
+<span class="sig-prename descclassname"><span class="pre">autocom.rpa.database.</span></span><span class="sig-name descname"><span class="pre">connect_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">connection_string</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference internal" href="#autocom.rpa.database.DatabaseConnection" title="autocom.rpa.database.DatabaseConnection"><span class="pre">autocom.rpa.database.DatabaseConnection</span></a></span></span><a class="headerlink" href="#autocom.rpa.database.connect_db" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Método que crea un object DatabaseConnection para establecer la onexión hacia la base de datos.</p>
+<dl class="simple">
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>connection_string (str): Cadena de conexión ODBC para conectarse a la base de datos destino. Deberá de instalarse el controlador ODBC correspondiente a la base de datos en el equipo que ejecutar+a eñ BOT-</p></li>
+</ul>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p>DatabaseConnection: Regresa un objeto tipo DatabaseConnection para manejar los comandos hacia la base de datos referida.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="autocom.rpa.database.connect_ssh_tunnel">
+<span class="sig-prename descclassname"><span class="pre">autocom.rpa.database.</span></span><span class="sig-name descname"><span class="pre">connect_ssh_tunnel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ssh_tunnel_config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#autocom.rpa.database.connect_ssh_tunnel" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Realiza la conexión de un tunel SSH hacia el servidor.</p>
+<dl>
+<dt>Args:</dt><dd><ul class="simple">
+<li><p>ssh_tunnel_config (JSON object): Objeto JSON con los parámetros para establecer la conexión.</p></li>
+</ul>
+<p>Los parámetros requeridos en el JSON son:</p>
+<blockquote>
+<div><div class="highlight-json notranslate"><div class="highlight"><pre><span></span>{
+    ssh_keyfilename: &quot;&lt;str&gt;&quot;,
+    ssh_hostname: &quot;&lt;str&gt;&quot;,
+    ssh_port: &lt;int&gt;,
+    ssh_username: &quot;&lt;str&gt;&quot;,
+    remote_address: &quot;&lt;str&gt;&quot;,
+    remote_port: &lt;int&gt;
+}
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>ssh_keyfilename: Path donde se ubica el certificado PEM para realizar la autenticación al conectarse al tunel SSH.</p></li>
+<li><p>ssh_hostname: URL o IP hacia donde se conectará el tunel SSH.</p></li>
+<li><p>ssh_port: Puerto a utilizar para la conexión SSH. Por default 22.</p></li>
+<li><p>ssh_username: Nombre de usuario para establecer la conexión SSH.</p></li>
+<li><p>remote_address: IP destino de la conexión.</p></li>
+<li><p>remote_port: Puerto destino de la conexión. (p.e. para una conexión para el servidor MySql por default es 3306).</p></li>
+</ul>
+</div></blockquote>
+</dd>
+<dt>Returns:</dt><dd><ul class="simple">
+<li><p>SSHTunnelForwarder: Regresa un objeto de la clase SSHTunnelForwarder de la conexión establecida.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2022, autocom.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

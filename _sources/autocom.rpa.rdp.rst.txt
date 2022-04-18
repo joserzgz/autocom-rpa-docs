@@ -1,0 +1,10 @@
+autocom.rpa.rdp package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: autocom.rpa.rdp
+   :members:
+   :undoc-members:
+   :show-inheritance:

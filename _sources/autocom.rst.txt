@@ -1,0 +1,18 @@
+autocom package
+===============
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   autocom.rpa
+
+Module contents
+---------------
+
+.. automodule:: autocom
+   :members:
+   :undoc-members:
+   :show-inheritance:
